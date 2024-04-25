@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Miles Morales</title>
+    <!--font-awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(./assets/back2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: black;
+
+        }
+
+
+        .menu li a {
+            color: rgb(212, 212, 212);
+            font-size: 20px;
+            text-decoration: none;
+
+            margin: 5px 7px;
+        }
+
+        .menu li a:hover {
+            color: white;
+            font-weight: bolder;
+            padding: 4px;
+        }
+
+        .container-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 600px;
+            min-height: auto;
+            text-shadow: 4px 4px 6px rgba(156, 157, 158, 0.951);
+            color: rgb(180, 177, 177);
+        }
+
+        div.item-1 {
+            width: 30%;
+            height: 400px;
+            min-height: auto;
+            padding-top: 50px;
+            margin: auto;
+
+        }
+
+        div.item-2 {
+            width: 60%;
+            min-height: auto;
+            padding: 20px;
+            margin: auto;
+            color: rgb(252, 252, 252);
+            text-align: center;
+
+        }
+
+        .container-2 {
+            color: whitesmoke;
+            text-align: center;
+            text-shadow: 4px 4px 6px rgba(107, 108, 108, 0.951);
+        }
+
+        .carousel-cell {
+            width: 76%;
+            height: 600px;
+            margin-right: 10px;
+            border-radius: 5px;
+
+        }
+
+        /*media Quries*/
+        @media screen and (max-width:800px) {
+
+            .container-1 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            div.item-1 {
+                width: 40%;
+                height: 300px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li style="overflow: auto ;">
+                <!--font-awesome icons -->
+
+                <a style="float: left;" href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                <a style="float: left;" href="#projects">Projects</a>
+                <a style="float:left;" href="#"><i class="fa fa-envelope"></i>Contact</a>
+
+                <a style="float:right;" href="#"><i class="fa fa-github"></i></a>
+                <a style="float:right;" href="#"><i class="fa fa-linkedin"></i></a>
+                <a style="float:right;" href="#"><i class="fa-brands fa-hackerrank"></i></a>
+
+
+            </li>
+        </ul>
+
+    </nav>
+    <br>
+
+    <div class="container-1">
+        <div class="item-1"> <img src="./assets/hacker-1.jpeg" width="100%" height="60%" style="border-radius: 50%;"
+                alt="">
+        </div>
+
+        <div class="item-2">
+            <h1 style="font-size: 50px; "> Miles Morales</h1>
+            <h2>I'm A Pythone Developer</h2>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorum accusantium nihil vitae,
+                doloremque eveniet delectus officiis aperiam harum non commodi impedit. Labore suscipit assumenda
+                debitis repudiandae id repellendus fugit!</article>
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="container-2" id="projects">
+
+        <h1>Projects</h1>
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <iframe height="550" style="width: 100%;" scrolling="no" title="React Calculator"
+                    src="https://codepen.io/tbremer/embed/wKpaWe?default-tab=html%2Cresult" frameborder="no"
+                    loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/tbremer/pen/wKpaWe">
+                        React Calculator</a> by Tom Bremer (<a href="https://codepen.io/tbremer">@tbremer</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+            </div>
+
+            <div class="carousel-cell">
+                <iframe height="550" style="width: 100%;" scrolling="no" title="Pretend Hacker"
+                    src="https://codepen.io/FacepalmRobot/embed/dGBKJB?default-tab=html%2Cresult&theme-id=dark"
+                    frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/FacepalmRobot/pen/dGBKJB">
+                        Pretend Hacker</a> by Facepalm Robot (<a
+                        href="https://codepen.io/FacepalmRobot">@FacepalmRobot</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+
+            </div>
+
+            <div class="carousel-cell">
+                <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="html,result"
+                    data-slug-hash="YoqNRB" data-user="aaroniker"
+                    style="height: 464px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/aaroniker/pen/YoqNRB">
+                            AI Assistant Blob</a> by Aaron Iker (<a href="https://codepen.io/aaroniker">@aaroniker</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+
+            <div class="carousel-cell">
+                <iframe height="550" style="width: 100%;" scrolling="no" title="Arrows Defense Game (Challenge)"
+                    src="https://codepen.io/faisal-jawed/embed/xxKBgBo?default-tab=html%2Cresult&theme-id=dark"
+                    frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/faisal-jawed/pen/xxKBgBo">
+                        Arrows Defense Game (Challenge)</a> by Faisal Jawed (<a
+                        href="https://codepen.io/faisal-jawed">@faisal-jawed</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+            </div>
+
+            <div class="carousel-cell">
+                <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="html,result"
+                    data-slug-hash="JybxxZ" data-user="gdube"
+                    style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/gdube/pen/JybxxZ">
+                            Pong game with JavaScript</a> by Gabriel Dubé (<a
+                            href="https://codepen.io/gdube">@gdube</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <footer style="background-color: rgb(8, 8, 12);text-align: center;">
+        <h4 style="padding: 20px; color:white; "> @Made by Vishakha</h4>
+        <i class="fa-brands fa-square-twitter"></i>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+</body>
+
+</html>
